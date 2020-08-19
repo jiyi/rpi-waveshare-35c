@@ -60,7 +60,7 @@
             0x1000029>;
   };
 
-  tft35a_ts: tft35a-ts@1 {
+  tft35c_ts: tft35c-ts@1 {
     compatible = "ti,ads7846";
     reg = <1>;
 
