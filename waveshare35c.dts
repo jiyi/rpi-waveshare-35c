@@ -3,16 +3,6 @@
 
 / {
   compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
-
-  __overrides__ {
-		speed =		<&tft35c>,"spi-max-frequency:0";
-		txbuflen =	<&tft35c>,"txbuflen:0";
-		rotate =	<&tft35c>,"rotate:0";
-		fps =		<&tft35c>,"fps:0";
-		bgr =		<&tft35c>,"bgr:0";
-		debug =		<&tft35c>,"debug:0";
-		swapxy =	<&tft35c_ts>,"ti,swap-xy?";
-	};
 };
 
 &spi0 {
@@ -80,5 +70,17 @@
     pendown-gpio = <&gpio 17 1>;
     ti,x-plate-ohms = /bits/ 16 <60>;
     ti,pressure-max = /bits/ 16 <255>;
+  };
+};
+
+/ {
+  __overrides__ {
+    speed =		<&tft35c>,"spi-max-frequency:0";
+    txbuflen =	<&tft35c>,"txbuflen:0";
+    rotate =	<&tft35c>,"rotate:0";
+    fps =		<&tft35c>,"fps:0";
+    bgr =		<&tft35c>,"bgr:0";
+    debug =		<&tft35c>,"debug:0";
+    swapxy =	<&tft35c_ts>,"ti,swap-xy?";
   };
 };
