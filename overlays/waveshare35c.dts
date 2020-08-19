@@ -7,12 +7,14 @@
 
 &spi0 {
   status = "okay";
-  spidev@0 {
-    status = "disabled";
-  };
-  spidev@1 {
-    status = "disabled";
-  };
+};
+
+&spidev0 {
+  status = "disabled";
+};
+
+&spidev1 {
+  status = "disabled";
 };
 
 &gpio {
@@ -28,7 +30,7 @@
   #size-cells = <0>;
 
   tft35c: tft35c@0 {
-    compatible = "ilitek,ili9486";
+    compatible = "ilitek,ili9486"; /* 使用的驱动 */
     reg = <0>;
     pinctrl-names = "default";
     pinctrl-0 = <&tft35c_pins>;
