@@ -20,7 +20,7 @@
 &gpio {
   tft35c_pins: tft35c_pins {
     brcm,pins = <17 25 24>;
-    brcm,function = <0 0 0>; /* in in in */
+    brcm,function = <0 1 1>; /* in out out */
   };
 };
 
