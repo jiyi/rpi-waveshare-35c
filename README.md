@@ -19,3 +19,6 @@ https://www.raspberrypi.org/forums/viewtopic.php?t=172342
 
 ## 理解源代码
 https://www.kernel.org/doc/Documentation/devicetree/bindings/gpio/gpio.txt
+
+## 中断的解释
+https://blog.csdn.net/xingqingly/article/details/81150670
