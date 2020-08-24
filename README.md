@@ -22,3 +22,7 @@ https://www.kernel.org/doc/Documentation/devicetree/bindings/gpio/gpio.txt
 
 ## 中断的解释
 https://blog.csdn.net/xingqingly/article/details/81150670
+
+## 触摸的问题
+
+将 spi-max-frequency，从 32000000, 改为 2000000
